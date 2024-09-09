@@ -30,6 +30,7 @@ html * {
     padding-right: 25%;
 }
 
+/*https://www.w3schools.com/cssref/pr_tab_table-layout.php*/
 [id^="cv-table-"] {
     table-layout: auto;
     width: 100%;
