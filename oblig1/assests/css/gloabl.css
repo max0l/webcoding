@@ -3,7 +3,7 @@
 /*https://www.geeksforgeeks.org/how-to-include-a-font-ttf-using-css/ */
 @font-face {
     font-family: SourceCodePro;
-    src: url(../fonts/SourceCodePro-Regular.otf);
+    src: url(../fonts/SourceCodePro-VariableFont_wght.ttf);
 }
 
 /*https://www.w3docs.com/snippets/css/how-to-apply-global-font-to-the-entire-html-document.html*/
@@ -25,6 +25,27 @@ html * {
 
 .content {
     color: #f1f1f1;
-    
-
+    padding: 25%;
   }
+
+  #cv-table {
+    table-layout: auto;
+    width: 100%;
+    & th {
+        text-align: left;
+        width: 70%;
+    }
+    & ul {
+        margin-top: 0; /*https://stackoverflow.com/a/3870801*/
+        max-width: 80%;
+    }
+    & #cv-time & #cs-location {
+        text-align: right;
+    }
+  }
+/* https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+@media only screen and (max-width: 600px) {
+    .content {
+        padding: 5%;
+    }
+}
