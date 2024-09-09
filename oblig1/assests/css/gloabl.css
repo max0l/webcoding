@@ -56,14 +56,22 @@ html * {
     width: 120%;
     margin-left: -10%;
     }
-    #video-showcase-vertical {
+  #video-showcase-vertical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120%;
+    margin-left: -10%;
+    height: 800px;
+    }
+  #image-horizontal {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 120%;
         margin-left: -10%;
-        height: 800px;
-        }
+    }
+
 /* https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
 @media only screen and (max-width: 600px) {
     .content {
