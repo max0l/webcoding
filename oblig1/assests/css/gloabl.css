@@ -24,8 +24,9 @@ html * {
 
 
 .content {
-    color: #f1f1f1;
+    color: #ffffff;
     padding: 25%;
+    padding-top: 0;
   }
 
   #cv-table {
@@ -42,10 +43,31 @@ html * {
     & #cv-time & #cs-location {
         text-align: right;
     }
+    & ul {
+        padding-left: 15px;
+    }
   }
+
+  /*https://www.geeksforgeeks.org/how-to-center-a-video-in-html/*/
+  #video-showcase-horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120%;
+    margin-left: -10%;
+    }
+    #video-showcase-vertical {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120%;
+        margin-left: -10%;
+        height: 800px;
+        }
 /* https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
 @media only screen and (max-width: 600px) {
     .content {
         padding: 5%;
     }
 }
+

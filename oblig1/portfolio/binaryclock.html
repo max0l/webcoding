@@ -4,27 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../assests/css/gloabl.css">
+    <title>Binary Clock</title>
 </head>
 
 <body>
-    <header>
-        <nav>
+    <video autoplay muted loop id="vhs">
+        <source src="../assests/videos/vhs.webm" type="video/webm">
+    </video>
 
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>Endlessh</h1>
-            <p>
-                This Project creates a nice Binary Clock using the Atmega48a, some 3D Printing, a DCF77, and as well a
-                CNC-Machine
-            </p>
-        </section>
-    </main>
-    <footer>
+    <div class="content">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="portfolio/index.html">Portfolio</a></li>
+                    <ul>
+                        <li><a href="portfolio/binaryclock.html">Binary Clock</a></li>
+                        <li><a href="portfolio/endlessh.html">Endlessh</a></li>
+                        <li><a href="portfolio/doorsystem.html">Door System</a></li>
+                    </ul>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="top">
+            <section>
+                <h1>Binary Clock</h1>
+                <p>
+                    This Project creates a nice Binary Clock using the Atmega48a, some 3D Printing, a DCF77, and as well
+                    a
+                    CNC-Machine.
+                </p>
+                <section>
+                    <h2>The Main Objective</h2>
+                    <p>I had the task of working on this specific lab experiment throughout the entire lecture period of
+                        the
+                        semester. Together with a partner, we had to design two unique circuit boards for a binary
+                        clock,
+                        manufacture them using the CNC milling machine, and then assemble them with the necessary
+                        components. At
+                        any point during the semester, we could present the finished circuit board and perform all the
+                        required
+                        tests, as outlined in the instructions, after coordinating with the examiners.</p>
+                    <p>More concrete steps:
+                    <ol>
+                        <li>Design of the circuit diagram using the provided components.</li>
+                        <li>Test the circuit diagram with the Schematic Rule Check (SRC).</li>
+                        <li>Design a PCB layout based on the circuit diagram.</li>
+                        <li>Test the layout with the Design Rule Check (DRC).</li>
+                        <li>Print the layout on paper and test again.</li>
+                        <li>Schedule an appointment with the student assistant (SHK) (via Opal).</li>
+                        <li>Create the PCB under the supervision of the SHK.</li>
+                        <li>Repeat the previous step if necessary.</li>
+                        <li>Assemble the components on the PCB.</li>
+                        <li>Solder the components.</li>
+                        <li>Test connections using a multimeter.</li>
+                        <li>First power-up and debugging.</li>
+                    </ol>
+                    </p>
+                </section>
+                <section>
+                    <h2>What we had in Plan</h2>
+                    <p>My friend and I had some other plans...</p>
+                    <p>We bought an DCF77 from Aliexpress and tried to make the Binary Clock able to receife the Time
+                        over the Air.</p>
+                    <p>This was even possible without WIFI. In Germanz we have a Radio Frequence of 77.5kHz which send
+                        out the time in a one-minute intervall.</p>
 
-    </footer>
+                </section>
+                <section>
+                    <h2>The final result:</h2>
+                    <p>The final result can be seen on the Github Page auf our project: <a
+                            href="https://github.com/max0l/BinaryClock">https://github.com/max0l/BinaryClock</a>. There
+                        are also all files to recreate this project.</p>
+
+                    <video controls id="video-showcase-horizontal">
+                        <!--https://www.w3schools.com/html/html5_video.asp-->
+                        <source src="../assests/videos/binaryclock-showcase.webm" type="video/mp4">
+                    </video>
+                    <h3>Showing the Time fetching</h3>
+                    <video controls id="video-showcase-vertical"> <!--https://www.w3schools.com/html/html5_video.asp-->
+                        <source src="../assests/videos/binaryclock-in-action.webm" type="video/mp4">
+                    </video>
+                </section>
+
+            </section>
+        </main>
+        <footer>
+            <hr>
+            <ul>
+                <li><a href="#top">Go Back to the top</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>&#169 Max Löbel</li>
+                <li><a href="assests/videos/funny-video.webm">Funny Video</a></li>
+            </ul>
+
+        </footer>
+    </div>
+
 </body>
+
 
 </html>
