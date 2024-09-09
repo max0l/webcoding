@@ -1,0 +1,30 @@
+/*https://www.w3schools.com/csS/css_font_google.asp*/
+/* https://www.w3schools.com/csS/css_text.asp */
+/*https://www.geeksforgeeks.org/how-to-include-a-font-ttf-using-css/ */
+@font-face {
+    font-family: SourceCodePro;
+    src: url(../fonts/SourceCodePro-Regular.otf);
+}
+
+/*https://www.w3docs.com/snippets/css/how-to-apply-global-font-to-the-entire-html-document.html*/
+html * {
+    font-family: SourceCodePro;
+    /*color: white;*/
+}
+
+/* https://www.w3schools.com/howto/howto_css_fullscreen_video.asp */
+#vhs { 
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /*https://stackoverflow.com/a/25043943*/
+}
+
+
+.content {
+    color: #f1f1f1;
+    
+
+  }
