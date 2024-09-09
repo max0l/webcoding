@@ -13,64 +13,71 @@ html * {
 }
 
 /* https://www.w3schools.com/howto/howto_css_fullscreen_video.asp */
-#vhs { 
+#vhs {
     position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    z-index: -1; /*https://stackoverflow.com/a/25043943*/
+    z-index: -1;
+    /*https://stackoverflow.com/a/25043943*/
 }
 
 
 .content {
     color: #ffffff;
-    padding: 25%;
-    padding-top: 0;
-  }
+    padding-left: 25%;
+    padding-right: 25%;
+}
 
-  [id^="cv-table-"] {
+[id^="cv-table-"] {
     table-layout: auto;
     width: 100%;
-    & th {
-        text-align: left;
-        width: 70%;
-    }
-    & ul {
-        margin-top: 0; /*https://stackoverflow.com/a/3870801*/
-        max-width: 80%;
-    }
-    & [id^="cv-time-"] & [id^="cv-location-"] {
-        text-align: right;
-    }
-    & ul {
-        padding-left: 15px;
-    }
-  }
+}
 
-  /*https://www.geeksforgeeks.org/how-to-center-a-video-in-html/*/
-  #video-showcase-horizontal {
+[id^="cv-table-"] th {
+    text-align: left;
+    width: 70%;
+}
+
+[id^="cv-table-"] ul {
+    margin-top: 0;
+    /*https://stackoverflow.com/a/3870801*/
+    max-width: 80%;
+    padding-left: 15px;
+}
+
+[id^="cv-time-"],
+[id^="cv-location-"] {
+    text-align: right;
+}
+
+
+/*https://www.geeksforgeeks.org/how-to-center-a-video-in-html/*/
+#video-showcase-horizontal {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 120%;
     margin-left: -10%;
-    }
-  #video-showcase-vertical {
+}
+
+#video-showcase-vertical {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 120%;
     margin-left: -10%;
     height: 800px;
-    }
-  #image-horizontal {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 120%;
-        margin-left: -10%;
-    }
+}
+
+#image-horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120%;
+    margin-left: -10%;
+}
 
 /* https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
 @media only screen and (max-width: 600px) {
@@ -78,4 +85,3 @@ html * {
         padding: 5%;
     }
 }
-
