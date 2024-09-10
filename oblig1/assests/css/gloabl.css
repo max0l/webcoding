@@ -32,6 +32,7 @@ h1 {
     color: #ffffff;
     padding-left: 25%;
     padding-right: 25%;
+    /*text-shadow: 5px 5px 10px color-mix(in srgb, pink 50%, turquoise 50%);*/
 }
 
 /*https://www.w3schools.com/cssref/pr_tab_table-layout.php*/
@@ -91,6 +92,17 @@ a:hover {
 a:active {
     color: grey;
 }
+
+
+header, footer {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 5px 20px;
+}
+
 
 /* https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
 @media only screen and (max-width: 1000px) {
