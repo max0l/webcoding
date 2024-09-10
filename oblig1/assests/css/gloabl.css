@@ -12,6 +12,10 @@ html * {
     /*color: white;*/
 }
 
+h1 {
+    font-size: 2em;
+}
+
 /* https://www.w3schools.com/howto/howto_css_fullscreen_video.asp */
 #vhs {
     position: fixed;
@@ -55,33 +59,41 @@ html * {
 
 
 /*https://www.geeksforgeeks.org/how-to-center-a-video-in-html/*/
-#video-showcase-horizontal {
-    display: flex;
-    justify-content: center;
+#video-showcase-horizontal,
+#video-showcase-vertical,
+#image-horizontal {
     align-items: center;
     width: 120%;
     margin-left: -10%;
 }
 
 #video-showcase-vertical {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120%;
-    margin-left: -10%;
     height: 800px;
 }
 
-#image-horizontal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120%;
-    margin-left: -10%;
+/* https://www.w3schools.com/css/css_link.asp */
+/* unvisited link */
+a:link {
+    color: turquoise;
+}
+
+/* visited link */
+a:visited {
+    color: hotpink;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: grey;
 }
 
 /* https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     .content {
         padding: 5%;
     }
