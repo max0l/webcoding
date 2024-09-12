@@ -54,22 +54,15 @@ img {
 }
 
 /* https://www.w3schools.com/css/css_link.asp */
-/* unvisited link */
 a:link {
     color: turquoise;
 }
-
-/* visited link */
 a:visited {
     color: hotpink;
 }
-
-/* mouse over link */
 a:hover {
     color: hotpink;
 }
-
-/* selected link */
 a:active {
     color: grey;
 }
@@ -92,6 +85,7 @@ dl dt {
 }
 
 /* https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+/* I used this bacause I wanted the marginh to be 5% on smaller screens */
 @media only screen and (max-width: 1000px) {
     .content {
         padding: 5%;
