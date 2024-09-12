@@ -43,7 +43,7 @@ h1 {
 /*https://www.geeksforgeeks.org/how-to-center-a-video-in-html/*/
 #video-showcase-horizontal,
 #video-showcase-vertical,
-#image-horizontal {
+img {
     align-items: center;
     width: 120%;
     margin-left: -10%;
