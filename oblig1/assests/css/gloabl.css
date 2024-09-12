@@ -5,11 +5,15 @@
     font-family: SourceCodePro;
     src: url(../fonts/SourceCodePro-VariableFont_wght.ttf);
 }
-
+code {
+    background-color: #2d2d2d;
+    color: #dbdbdb;
+    padding-left: 3px;
+    padding-right: 3px;
+}
 /*https://www.w3docs.com/snippets/css/how-to-apply-global-font-to-the-entire-html-document.html*/
 html * {
     font-family: SourceCodePro;
-    /*color: white;*/
 }
 
 h1 {
@@ -80,6 +84,12 @@ nav ul li {
     margin: 5px 20px;
 }
 
+dl dt {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    font-size: 1.1em;
+    font-weight:600;
+}
 
 /* https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
 @media only screen and (max-width: 1000px) {
