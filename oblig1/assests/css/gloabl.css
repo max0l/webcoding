@@ -79,7 +79,7 @@ header, footer {
     text-align: center;
 }
 
-nav ul li {
+header nav ul li, footer nav ul li {
     display: inline-block;
     margin: 5px 20px;
 }
