@@ -1,0 +1,1 @@
+https://maxfl.folk.ntnu.no/land-root/oblig1/index.html
