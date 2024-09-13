@@ -1,0 +1,9 @@
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# User-specific VSCode settings
+.vscode/settings.json
+
+# Workspace-specific VSCode settings
+.vscode/*.code-workspace
