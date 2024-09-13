@@ -103,4 +103,9 @@ dl dt {
 
 #nlist section p {
     margin-left: 3%;
+    margin-top: 10px;
+}
+
+#nlist section section h4 {
+    margin-bottom: 0;
 }
