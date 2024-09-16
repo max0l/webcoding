@@ -7,3 +7,4 @@
 
 # Workspace-specific VSCode settings
 .vscode/*.code-workspace
+*.zip
