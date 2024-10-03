@@ -187,6 +187,7 @@ h2::before {
 
 /*TODO: Ask with what browser the site will be visited + tell about weird FF behaviour*/
 /*TODO: Ask if media Queries are allowd*/
+/*TODO: Ask what tool to use to validate */
 @media screen and (max-width: 700px) {
     .content {
         max-width: 80%;
