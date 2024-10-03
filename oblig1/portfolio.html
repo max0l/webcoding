@@ -45,16 +45,16 @@ o Image:
                 <h2>Table of contents:</h2>
                 <nav>
                     <ul>
-                        <li><a href="#binaryclock">My Homemade Binary Clock</a></li>
-                        <li><a href="#doorsystem">Developing a Door Locking System for my local Hackspace</a></li>
-                        <li><a href="#endlessh">Deployment of endlessh on my server</a></li>
+                        <li><a href="#binaryclock">Building a Binary Clock</a></li>
+                        <li><a href="#doorsystem">The new Dezentrale Door-Locking-System</a></li>
+                        <li><a href="#endlessh">Setup of Endlessh</a></li>
                     </ul>
                 </nav>
             </section>
             <!--I have put the articals in a own dif because sometimes an artical has an "aside"-->
             <div id="binaryclock">
                 <article>
-                    <h2>Binary Clock</h2>
+                    <h2>Building a Binary Clock</h2>
                     <p>
                         This Project creates a nice Binary Clock using the Atmega48a, some 3D Printing, a DCF77, and as
                         well
@@ -113,12 +113,12 @@ o Image:
                                 target="_blank">https://github.com/max0l/BinaryClock</a>. There
                             are also all files to recreate this project.</p>
 
-                        <video controls id="video-showcase-horizontal">
+                        <video controls class="video-showcase-horizontal">
                             <!--https://www.w3schools.com/html/html5_video.asp-->
                             <source src="assests/videos/binaryclock-showcase.webm" type="video/webm">
                         </video>
                         <h4>Showing the Time fetching</h4>
-                        <video controls id="video-showcase-vertical">
+                        <video controls class="video-showcase-vertical">
                             <!--https://www.w3schools.com/html/html5_video.asp-->
                             <source src="assests/videos/binaryclock-in-action.webm" type="video/webm">
                         </video>
@@ -157,7 +157,7 @@ o Image:
                         <h3>How it's going</h3>
                         <!--I used a figure + figcaption here to elaborate more of the diagram and give it more meaning-->
                         <figure>
-                            <img id="image-horizontal" src="assests/images/lockingsystem-schematic.webp"
+                            <img class="image-horizontal" src="assests/images/lockingsystem-schematic.webp"
                                 alt="Schemaitc where the functionality and the different devices are made visually">
                             <figcaption>Schemaitc where the functionality and the different devices are made visually
                             </figcaption>
@@ -202,7 +202,7 @@ o Image:
             </div>
             <div id="endlessh">
                 <article>
-                    <h2>Endlessh</h2>
+                    <h2>Setup of Endlessh</h2>
                     <!--I did not used a section here, because in my opinion it is not very meaningful for a short paragraph-->
                     <p>
                         A few days ago, I set up <a href="https://github.com/shizunge/endlessh-go"
@@ -221,7 +221,7 @@ o Image:
                         registered abuse contact. The IP belonged to a hosting provider. Let’s see what comes out of it.
                         I also searched for the IP on CrowdSec and quickly found it had already been flagged before.
                     </p>
-                    <img id="image-horizontal" src="assests/images/endlessh-grafana.webp"
+                    <img class="image-horizontal" src="assests/images/endlessh-grafana.webp"
                         alt="Grafana Dashboard of the Endlessh Data">
                 </article>
             </div>

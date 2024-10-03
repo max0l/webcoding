@@ -32,205 +32,209 @@ this page together with the explanations.-->
             </nav>
         </header>
         <main id="top">
-            <article>
+            <section>
                 <h1>About</h1>
-                <p>Here I will discuss which and why I used which HTML Element and will elaborate on design decisions.
+                <p>Here I will discuss which and why I used which HTML Element and will elaborate on design
+                    decisions.
                     You can view my development progress on my <a href="https://github.com/max0l/webcoding"
                         target="_blank">Github
                         Repo</a>.
                 </p>
-                <section>
-                    <h2>The main Idea</h2>
-                    <p>The main idea of my Website is to look minimalistic, modern with a touch of <em>Computer
-                            Science</em> and
-                        Retro Gaming.</p>
-                    <p>This is done by using a more Code like looking font and a VHS Screen video that acts as the
-                        background to add this old VHS noise and feeling. I also tried to choose a background Video
-                        which is very suptile.</p>
-                </section>
-                <section>
-                    <h2>The Design Elements</h2>
-                    <div id="nlist">
-                        <section>
-                            <h3>Structural HTML Elements</h3>
-                            <section>
-                                <h4>&lt;div class="content"&gt;</h4>
-                                <p>
-                                    I used the <code>&lt;div class="content"&gt;</code> to separate the video, which
-                                    functions
-                                    as the background, and the contents. This will ensure that I can apply CSS rules on
-                                    the
-                                    content more easily.
-                                </p>
-                            </section>
-                            <section>
-                                <h4>&lt;header&gt;</h4>
-                                <p>The <code>&lt;header&gt;</code> is used to describe the Navigation Menu at the top of
-                                    the
-                                    website. It is fixed at the top of the Website.
-                                </p>
-                                <section>
-                                    <h4>&lt;nav&gt;</h4>
-                                    <p>The <code>&lt;nav&gt;</code> holds the <code>&lt;ul&gt;</code> with each
-                                        <code>&lt;li&gt;</code> containing a link to a site. The
-                                        <code>&lt;nav&gt;</code> is
-                                        used because it is the semantic tag exactly used for this purpose.
-                                    </p>
-                                </section>
-                            </section>
-                            <section>
-                                <h4>&lt;main&gt;</h4>
-                                <p>The <code>&lt;main&gt;</code> is used to describe the main content of the site. It
-                                    has an
-                                    ID=top because I wanted the functionality that if you are at the bottom of the site,
-                                    you
-                                    can easily get to the top again. This is done by creating an <code>href</code> that
-                                    links
-                                    to the <code>#top</code> of the site.
-                                </p>
-                            </section>
-                            <section>
-                                <h4>&lt;article&gt;</h4>
-                                <p>The article tag is used to define the main article. Sometimes I used an
-                                    <code>&lt;aside&gt;</code>, which does not have to be in the main article.
-                                </p>
-                            </section>
-                            <section>
-                                <h4>&lt;section&gt;</h4>
-                                <p>
-                                    A <code>&lt;section&gt;</code> is used to structure an article in itself. Here I
-                                    used other
-                                    elements like <code>&lt;h1&gt;</code>, <code>&lt;ul&gt;</code>,
-                                    <code>&lt;p&gt;</code>, or
-                                    <code>&lt;img&gt;</code>.
-                                </p>
-                            </section>
-                            <section>
-                                <h4>&lt;footer&gt;</h4>
-                                <p>Similar to the <code>&lt;header&gt;</code>, it was used to create a footer that
-                                    showed the
-                                    "back to top" link as well as some other links you usually find at the footer.
-                                </p>
-                            </section>
-                            <section>
-                                <h4>&lt;address&gt;</h4>
-                                <p>The <code>&lt;address&gt;</code> was used to <em>surprise</em> write about my
-                                    address. I used the
-                                    <code>&lt;br&gt;</code> there to make the formatting better (as learned in the
-                                    lecture).
-                                </p>
-                            </section>
-                        </section>
-
-                        <section>
-                            <h3>Semantic HTML Elements</h3>
-                            <section>
-                                <h4>&lt;strong&gt;</h4>
-                                <p>I used the <code>&lt;strong&gt;</code> tag to emphasize that I am the FIRST child of
-                                    my parents,
-                                    which I mentioned on the landing page. This is because I my brother looks older then me.
-                                </p>
-                            </section>
-                            <section>
-                                <h4>&lt;em&gt;</h4>
-                                <p>I used the <code>&lt;em&gt;</code> tag when I described the <cite>touch of Computer
-                                        Science</cite>, which is not easily describable.
-                                </p>
-                            </section>
-                            <section>
-                                <h4>&lt;cite&gt;</h4>
-                                <p>The <code>&lt;cite&gt;</code> tag was used to reference a quoted work.</p>
-                            </section>
-                            <section>
-                                <h4>&lt;del&gt;</h4>
-                                <p>This tag was used to cross out a bad word and "replace" it.</p>
-                            </section>
-                            <section>
-                                <h4>&lt;blockquote&gt;</h4>
-                                <p>This was used for a longer quote I took from the Dezentrale website.</p>
-                            </section>
-                            <section>
-                                <h4>&lt;tr&gt;</h4>
-                                <p>I used a table for my resume. I have a really nice-looking resume latex template and
-                                    I tried
-                                    to reproduce it in HTML.
-                                </p>
-                            </section>
-                            <section>
-                                <h4>&lt;sup&gt;</h4>
-                                <p>The <code>&lt;sup&gt;</code> was used to superscript the "st" in my birthday.</p>
-                            </section>
-                            <section>
-                                <h4>&lt;abbr&gt;</h4>
-                                <p>I used the <code>&lt;abbr&gt;</code> to explain an abbreviation or acronym.</p>
-                            </section>
-                            <section>
-                                <h4>&lt;dfn&gt;</h4>
-                                <p><code>&lt;dfn&gt;</code> was used to explain what the Dezentrale is.</p>
-                            </section>
-                            <section>
-                                <h4>&lt;figure&gt;</h4>
-                                <p>A figure was used on the <a href="portfolio/doorsystem.html">doorsystem.html</a> page
-                                    to explain a diagram.
-                                </p>
-                            </section>
-                        </section>
-
-                        <section>
-                            <h3>Other Design Decisions</h3>
-                            <p>There are a few other decisions I made during this assignment that I want to elaborate
-                                on.</p>
-                            <section>
-                                <h4>Folder Structure</h4>
-                                <p>
-                                    The folder structure shows that I have a main folder containing
-                                    <code>index.html, resume.html, contact.html, and about.html</code>. This is all in
-                                    the main
-                                    folder because I think it is easier to understand than having an extra folder for
-                                    every
-                                    HTML file in the main directory and then naming every page index.html.
-                                </p>
-                                <p>
-                                    For the Portfolio, it is something else because there are <em>many</em> subfolders.
-                                    This would
-                                    blow up the Navigation (if no Dropdown). So, the Portfolio has an
-                                    <code>index.html</code> to
-                                    navigate from there to the subpages. My file structure is suggested by <a
-                                        href="https://web.archive.org/web/20230612174518/https://www.htmlquick.com/tutorials/organizing-website.html"
-                                        target="_blank">this resource</a>, which was linked at the Oblig description.
-                                </p>
-                            </section>
-                            <section>
-                                <h4>Aside</h4>
-                                <p>
-                                    I had considered writing a little blog before this class as well, but had no great
-                                    knowledge of HTML/CSS. But now everything is coming together. I will use other tools
-                                    to
-                                    create one. I'm really interested in Static Site Generators and Nunjucks, for
-                                    example.
-                                </p>
-                                <p>
-                                    I also tried to use webm and webp because I heard that this file format is especially
-                                    well-encoded for
-                                    the web and requieres less space/bandwith.
-                                </p>
-                            </section>
-                        </section>
-                    </div>
+            </section>
+            <section>
+                <h2>The main Idea</h2>
+                <p>The main idea of my Website is to look minimalistic, modern with a touch of <em>Computer
+                        Science</em> and
+                    Retro Gaming.</p>
+                <p>This is done by using a more Code like looking font and a VHS Screen video that acts as the
+                    background to add this old VHS noise and feeling. I also tried to choose a background Video
+                    which is very suptile.</p>
+            </section>
+            <article>
+                <h2>The Design Elements</h2>
+                <div id="nlist">
                     <section>
-                        <h2>Sketches</h2>
-                        <figure>
-                            <img src="assests/images/template.webp"
-                                alt="Drawing of a template with HTML Elements and notes. Not really a good handwriting.">
-                            <figcaption>This is the standard template I have thought of for my website.</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="assests/images/template-resume.webp"
-                                alt="Drawing of a website for a Resume with HTML Elements and notes. Not really a good handwriting.">
-                            <figcaption>This is the template I have thought of for my resume.</figcaption>
-                        </figure>
+                        <h3>Structural HTML Elements</h3>
+                        <section>
+                            <h4>&lt;div class="content"&gt;</h4>
+                            <p>
+                                I used the <code>&lt;div class="content"&gt;</code> to separate the video, which
+                                functions
+                                as the background, and the contents. This will ensure that I can apply CSS rules on
+                                the
+                                content more easily.
+                            </p>
+                        </section>
+                        <section>
+                            <h4>&lt;header&gt;</h4>
+                            <p>The <code>&lt;header&gt;</code> is used to describe the Navigation Menu at the top of
+                                the
+                                website. It is fixed at the top of the Website.
+                            </p>
+                            <section>
+                                <h4>&lt;nav&gt;</h4>
+                                <p>The <code>&lt;nav&gt;</code> holds the <code>&lt;ul&gt;</code> with each
+                                    <code>&lt;li&gt;</code> containing a link to a site. The
+                                    <code>&lt;nav&gt;</code> is
+                                    used because it is the semantic tag exactly used for this purpose.
+                                </p>
+                            </section>
+                        </section>
+                        <section>
+                            <h4>&lt;main&gt;</h4>
+                            <p>The <code>&lt;main&gt;</code> is used to describe the main content of the site. It
+                                has an
+                                ID=top because I wanted the functionality that if you are at the bottom of the site,
+                                you
+                                can easily get to the top again. This is done by creating an <code>href</code> that
+                                links
+                                to the <code>#top</code> of the site.
+                            </p>
+                        </section>
+                        <section>
+                            <h4>&lt;article&gt;</h4>
+                            <p>The article tag is used to define the main article. Sometimes I used an
+                                <code>&lt;aside&gt;</code>, which does not have to be in the main article.
+                            </p>
+                        </section>
+                        <section>
+                            <h4>&lt;section&gt;</h4>
+                            <p>
+                                A <code>&lt;section&gt;</code> is used to structure an article in itself. Here I
+                                used other
+                                elements like <code>&lt;h1&gt;</code>, <code>&lt;ul&gt;</code>,
+                                <code>&lt;p&gt;</code>, or
+                                <code>&lt;img&gt;</code>.
+                            </p>
+                        </section>
+                        <section>
+                            <h4>&lt;footer&gt;</h4>
+                            <p>Similar to the <code>&lt;header&gt;</code>, it was used to create a footer that
+                                showed the
+                                "back to top" link as well as some other links you usually find at the footer.
+                            </p>
+                        </section>
+                        <section>
+                            <h4>&lt;address&gt;</h4>
+                            <p>The <code>&lt;address&gt;</code> was used to <em>surprise</em> write about my
+                                address. I used the
+                                <code>&lt;br&gt;</code> there to make the formatting better (as learned in the
+                                lecture).
+                            </p>
+                        </section>
                     </section>
-            </article>
+
+                    <section>
+                        <h3>Semantic HTML Elements</h3>
+                        <section>
+                            <h4>&lt;strong&gt;</h4>
+                            <p>I used the <code>&lt;strong&gt;</code> tag to emphasize that I am the FIRST child of
+                                my parents,
+                                which I mentioned on the landing page. This is because I my brother looks older then
+                                me.
+                            </p>
+                        </section>
+                        <section>
+                            <h4>&lt;em&gt;</h4>
+                            <p>I used the <code>&lt;em&gt;</code> tag when I described the <cite>touch of Computer
+                                    Science</cite>, which is not easily describable.
+                            </p>
+                        </section>
+                        <section>
+                            <h4>&lt;cite&gt;</h4>
+                            <p>The <code>&lt;cite&gt;</code> tag was used to reference a quoted work.</p>
+                        </section>
+                        <section>
+                            <h4>&lt;del&gt;</h4>
+                            <p>This tag was used to cross out a bad word and "replace" it.</p>
+                        </section>
+                        <section>
+                            <h4>&lt;blockquote&gt;</h4>
+                            <p>This was used for a longer quote I took from the Dezentrale website.</p>
+                        </section>
+                        <section>
+                            <h4>&lt;tr&gt;</h4>
+                            <p>I used a table for my resume. I have a really nice-looking resume latex template and
+                                I tried
+                                to reproduce it in HTML.
+                            </p>
+                        </section>
+                        <section>
+                            <h4>&lt;sup&gt;</h4>
+                            <p>The <code>&lt;sup&gt;</code> was used to superscript the "st" in my birthday.</p>
+                        </section>
+                        <section>
+                            <h4>&lt;abbr&gt;</h4>
+                            <p>I used the <code>&lt;abbr&gt;</code> to explain an abbreviation or acronym.</p>
+                        </section>
+                        <section>
+                            <h4>&lt;dfn&gt;</h4>
+                            <p><code>&lt;dfn&gt;</code> was used to explain what the Dezentrale is.</p>
+                        </section>
+                        <section>
+                            <h4>&lt;figure&gt;</h4>
+                            <p>A figure was used on the <a href="portfolio/doorsystem.html">doorsystem.html</a> page
+                                to explain a diagram.
+                            </p>
+                        </section>
+                    </section>
+
+                    <section>
+                        <h3>Other Design Decisions</h3>
+                        <p>There are a few other decisions I made during this assignment that I want to elaborate
+                            on.</p>
+                        <section>
+                            <h4>Folder Structure</h4>
+                            <p>
+                                The folder structure shows that I have a main folder containing
+                                <code>index.html, resume.html, contact.html, and about.html</code>. This is all in
+                                the main
+                                folder because I think it is easier to understand than having an extra folder for
+                                every
+                                HTML file in the main directory and then naming every page index.html.
+                            </p>
+                            <p>
+                                For the Portfolio, it is something else because there are <em>many</em> subfolders.
+                                This would
+                                blow up the Navigation (if no Dropdown). So, the Portfolio has an
+                                <code>index.html</code> to
+                                navigate from there to the subpages. My file structure is suggested by <a
+                                    href="https://web.archive.org/web/20230612174518/https://www.htmlquick.com/tutorials/organizing-website.html"
+                                    target="_blank">this resource</a>, which was linked at the Oblig description.
+                            </p>
+                        </section>
+                        <section>
+                            <h4>Aside</h4>
+                            <p>
+                                I had considered writing a little blog before this class as well, but had no great
+                                knowledge of HTML/CSS. But now everything is coming together. I will use other tools
+                                to
+                                create one. I'm really interested in Static Site Generators and Nunjucks, for
+                                example.
+                            </p>
+                            <p>
+                                I also tried to use webm and webp because I heard that this file format is
+                                especially
+                                well-encoded for
+                                the web and requieres less space/bandwith.
+                            </p>
+                        </section>
+                    </section>
+                </div>
+                <section>
+                    <h2>Sketches</h2>
+                    <figure>
+                        <img src="assests/images/template.webp"
+                            alt="Drawing of a template with HTML Elements and notes. Not really a good handwriting.">
+                        <figcaption>This is the standard template I have thought of for my website.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assests/images/template-resume.webp"
+                            alt="Drawing of a website for a Resume with HTML Elements and notes. Not really a good handwriting.">
+                        <figcaption>This is the template I have thought of for my resume.</figcaption>
+                    </figure>
+                </section>
+                </article>
         </main>
         <footer>
             <nav>
