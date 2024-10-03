@@ -90,14 +90,7 @@ dl dt {
     font-weight:600;
 }
 
-.horizontal-line {
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: rgb(133, 133, 133); 
-    margin-top: 20px;
-}
-
+header::after,
 footer:before {
     content: "";
     display: block;
@@ -105,6 +98,64 @@ footer:before {
     height: 1px;
     background-color: rgb(133, 133, 133); 
     margin-top: 20px;
+}
+h2::before,
+.horizontal-line {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(133, 133, 133, 0.5); 
+    margin-bottom: 20px;
+}
+
+
+/*Lists*/
+#nlist section ul>li {
+    list-style-type: none;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+#nlist section ul li ol {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+#nlist section p {
+    margin-left: 3%;
+    margin-top: 10px;
+}
+
+#nlist section section h4 {
+    margin-bottom: 0;
+}
+
+/*Resume*/
+/*https://www.w3schools.com/cssref/pr_tab_table-layout.php*/
+.cv-table {
+    table-layout: auto;
+    width: 100%;
+}
+
+.cv-table th {
+    text-align: left;
+    width: 70%;
+    font-weight: 1000;
+    font-size: 1.1em;
+}
+
+.cv-table ul {
+    margin-top: 0;
+    /*https://stackoverflow.com/a/3870801*/
+    max-width: 80%;
+    padding-left: 15px;
+}
+
+.cv-time,
+.cv-location {
+    text-align: right;
 }
 
 /*TODO: Ask if media Queries are allowd*/
