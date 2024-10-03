@@ -108,6 +108,11 @@ h2::before {
     margin-bottom: 20px;
 }
 
+.gototop {
+    text-align: center;
+    font-size: small;
+}
+
 
 /*Lists*/
 #nlist section ul>li {

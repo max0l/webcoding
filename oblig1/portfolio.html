@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!-- Use this page to show to the world your best works or
+projects. A portfolio project can be anything you want, such as a picture, a
+drawing, a piece of art, a website, etc. You can also use assignments from
+other courses such as IDG1000. You must include at least three different
+projects. All the projects in your portfolio must have a title, a description
+explaining what the project is about (5 or 6 lines) and an image. Example
+below (text from Wikipedia):
+o Title: Guernica
+o Short description: Guernica is a large 1937 oil painting on canvas
+by Spanish artist Pablo Picasso. It is one of his best-known works,
+regarded by many art critics as the most moving and powerful anti-
+war painting in history.    
+o Image:
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assests/gloabl.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <video autoplay muted loop id="vhs">
+        <source src="assests/videos/vhs.webm" type="video/webm">
+    </video>
+
+    <div class="content">
+        <header>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="top">
+            <section>
+                <h1>Table of contents:</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#binaryclock">My Homemade Binary Clock</a></li>
+                        <li><a href="#doorsystem">Developing a Door Locking System for my local Hackspace</a></li>
+                        <li><a href="#endlessh">Deployment of endlessh on my server</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <!--I have put the articals in a own dif because sometimes an artical has an "aside"-->
+            <div id="binaryclock">
+                <article>
+                    <h2>Binary Clock</h2>
+                    <p>
+                        This Project creates a nice Binary Clock using the Atmega48a, some 3D Printing, a DCF77, and as
+                        well
+                        a
+                        <abbr title="Computer Numerical Control">CNC</abbr>-Machine.
+                    </p>
+                    <section>
+                        <h3>The Main Objective</h3>
+                        <p>I had the task of working on this specific lab experiment throughout the entire lecture
+                            period of
+                            the
+                            semester. Together with a partner, we had to design two unique circuit boards for a binary
+                            clock,
+                            manufacture them using the CNC milling machine, and then assemble them with the necessary
+                            components. At
+                            any point during the semester, we could present the finished circuit board and perform all
+                            the
+                            required
+                            tests, as outlined in the instructions, after coordinating with the examiners.
+                        </p>
+                        <p>More concrete steps:</p>
+                        <ol>
+                            <li>Design of the circuit diagram using the provided components.</li>
+                            <li>Test the circuit diagram with the Schematic Rule Check.</li>
+                            <li>Design a <abbr title="Printed circuit board">PCB</abbr> layout based on the circuit
+                                diagram.</li>
+                            <li>Test the layout with the Design Rule Check.</li>
+                            <li>Print the layout on paper and test again.</li>
+                            <li>Schedule an appointment with the student assistant.</li>
+                            <li>Create the <abbr title="Printed circuit board">PCB</abbr> under the supervision of the
+                                student assistant.</li>
+                            <li>Repeat the previous step if necessary.</li>
+                            <li>Assemble the components on the <abbr title="Printed circuit board">PCB</abbr>.</li>
+                            <li>Solder the components.</li>
+                            <li>Test connections using a multimeter.</li>
+                            <li>First power-up and debugging.</li>
+                        </ol>
+                    </section>
+                    <section>
+                        <h3>What we had in Plan</h3>
+                        <p>My friend and I had some other plans...</p>
+                        <p>We bought an DCF77 from Aliexpress and tried to make the Binary Clock able to receife the
+                            Time
+                            over the Air.</p>
+                        <p>This was even possible without WIFI. In Germany we have a Radio Frequence of 77.5kHz which
+                            sends
+                            out the time in a one-minute intervall. More can be read here: <a
+                                href="https://en.wikipedia.org/wiki/DCF77"
+                                target="_blank">https://en.wikipedia.org/wiki/DCF77</a></p>
+
+                    </section>
+                    <section>
+                        <h3>The final result:</h3>
+                        <p>The final result can be seen on the Github Page auf our project: <a
+                                href="https://github.com/max0l/BinaryClock"
+                                target="_blank">https://github.com/max0l/BinaryClock</a>. There
+                            are also all files to recreate this project.</p>
+
+                        <video controls id="video-showcase-horizontal">
+                            <!--https://www.w3schools.com/html/html5_video.asp-->
+                            <source src="assests/videos/binaryclock-showcase.webm" type="video/webm">
+                        </video>
+                        <h4>Showing the Time fetching</h4>
+                        <video controls id="video-showcase-vertical">
+                            <!--https://www.w3schools.com/html/html5_video.asp-->
+                            <source src="assests/videos/binaryclock-in-action.webm" type="video/webm">
+                        </video>
+                    </section>
+                </article>
+                <p class="gototop">
+                    <a href="#top">Go Back to the top</a>
+                </p>
+            </div>
+
+            <div id="doorsystem">
+                <article>
+                    <h2>The new Dezentrale Door-Locking-System</h2>
+                    <section>
+                        <h3>How it all Started</h3>
+                        <p>The Hackspace where I'm a member of will move soon.</p>
+                        <p>But, because we are moving to a not so nice part of the city, we needed a new
+                            Door-Locking-System. A
+                            team, with a friend and me as the Team leaders, were tasked to develop a new System for the
+                            new
+                            Hackspace Location.</p>
+                        <p>I have always been interested in the mechanics of NFC, and this Project taught me a lot. We
+                            needed
+                            to
+                            think
+                            of a System that works reliably, fast and is secure. For this, we met with some other people
+                            from
+                            the
+                            Hackspace to discuss it.</p>
+                        <p>The Result was, that we will use NFC-Cards and also make it possible to unlock the doors over
+                            an
+                            SSH
+                            connection. This would insure two ways if one failed.</p>
+                    </section>
+                    <section>
+                        <h3>How it's going</h3>
+                        <!--I used a figure + figcaption here to elaborate more of the diagram and give it more meaning-->
+                        <figure>
+                            <img id="image-horizontal" src="../assests/images/lockingsystem-schematic.webp"
+                                alt="Schemaitc where the functionality and the different devices are made visually">
+                            <figcaption>Schemaitc where the functionality and the different devices are made visually
+                            </figcaption>
+                        </figure>
+                        <p>Unfortunatly, since of now, it has not been finally build. This is because we didn't moved
+                            yet.
+                            But
+                            there
+                            are some Proto types.</p>
+                    </section>
+                </article>
+                <aside>
+                    <section>
+                        <h2>What is the "Dezentrale" You ask?</h2>
+                        <blockquote cite="https://dezentrale.space/ueber-uns/">
+                            The <dfn>dezentrale <abbr title="Eingetragener Verein">e.V</abbr></dfn> is an independent
+                            non-profit
+                            association that runs a hackspace in the western
+                            part of Leipzig. A hackspace (also referred to here as "space") is a place for exchanging
+                            ideas
+                            and
+                            working on projects, which tend to be related to technology but don’t have to be.
+                            Occasionally,
+                            activities like sewing might take place as well.
+
+                            The space is a community-managed location where people with an interest in technology can
+                            come
+                            together to learn from each other, work on projects, or discuss (internet policy) topics.
+
+                            Perhaps you’ve heard of the Chaos Computer Club: We are the local Chaos in Leipzig. (We are
+                            an
+                            experience-sharing group of the Chaos Computer Club). The Homepage of the dezentrae e.V can
+                            be
+                            found
+                            <a href="https://dezentrale.space/" target="_blank">here</a>.
+                        </blockquote>
+                    </section>
+                </aside>
+                <p class="gototop">
+                    <a href="#top">Go Back to the top</a>
+                </p>
+            </div>
+            <div id="endlessh">
+                <article>
+                    <h2>Endlessh</h2>
+                    <!--I did not used a section here, because in my opinion it is not very meaningful for a short paragraph-->
+                    <p>
+                        A few days ago, I set up <a href="https://github.com/shizunge/endlessh-go"
+                            target="_blank">Endlessh-go</a> (aka
+                        SSH-Tarpit). It's quite
+                        amusing to see how <abbr title="Secure Shell">SSH</abbr> scanners fall for it.
+                        Brief explanation: Endlessh listens on an open port, and when someone tries to log in via SSH,
+                        nothing
+                        happens. However, the client is not disconnected, which causes them to be 'trapped' and slowed
+                        down
+                        indefinitely.
+                        You can also integrate Endlessh nicely into Grafana. It looks something like this:
+                        Just for fun, I looked up a German IP in the Whois that stood out particularly and sent an email
+                        to
+                        the
+                        registered abuse contact. The IP belonged to a hosting provider. Let’s see what comes out of it.
+                        I also searched for the IP on CrowdSec and quickly found it had already been flagged before.
+                    </p>
+                    <img id="image-horizontal" src="assests/images/endlessh-grafana.webp"
+                        alt="Grafana Dashboard of the Endlessh Data">
+                </article>
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="#top">Go Back to the top</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="assests/videos/funny-video.webm" target="_blank">Funny Video</a></li>
+                    <li>&#169; Max Löbel</li>
+                </ul>
+            </nav>
+
+        </footer>
+    </div>
+
+</body>
+
+
+</html>
