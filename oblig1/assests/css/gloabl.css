@@ -44,18 +44,17 @@ h1,h2 {
 
 /*https://www.geeksforgeeks.org/how-to-center-a-video-in-html/*/
 #video-showcase-horizontal,
-#video-showcase-vertical,
 img {
-    max-width: 130%;
-    margin-left: -15%;
+    max-width: 120%;
+    margin: 0 -10%;
+    /* https://www.freecodecamp.org/news/how-to-center-an-image-in-css/ */
+    display: block;
 }
 
 #video-showcase-vertical {
-    max-width: 60%;
-    margin: 0 auto;
-
-    /* https://www.freecodecamp.org/news/how-to-center-an-image-in-css/ */
+    max-width: 100%;
     display: block;
+    margin: 0 auto;
 }
 
 
