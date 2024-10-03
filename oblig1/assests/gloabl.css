@@ -4,7 +4,7 @@
 @font-face {
     font-family: SourceCodePro;
     /*This is a subset version of Source Code Pro to reduce the carbon footprint*/
-    src: url(../fonts/SourceCodePro-Regular-subset.ttf);
+    src: url(fonts/SourceCodePro-Regular-subset.ttf);
 }
 
 code {
@@ -161,23 +161,31 @@ h2::before {
 
 /*Resume*/
 /*https://www.w3schools.com/cssref/pr_tab_table-layout.php*/
+/*https://www.w3schools.com/css/css_grid.asp*/
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout*/
 .cv-table {
-    table-layout: auto;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
 }
 
-.cv-table th {
-    text-align: left;
-    width: 70%;
-    font-weight: 1000;
-    font-size: 1.1em;
+.cv-table p {
+    margin-bottom: 10px;
+    margin-top: 0;
 }
 
 .cv-table ul {
+    margin-top: 3px;
+    padding-left: 20px;
+}
+
+.cv-table {
+    margin-bottom: 10px;
     margin-top: 0;
-    /*https://stackoverflow.com/a/3870801*/
-    max-width: 80%;
-    padding-left: 15px;
+}
+
+.cv-title {
+    font-weight: 800;
+    font-size: 1.2em;
 }
 
 .cv-time,
@@ -185,10 +193,12 @@ h2::before {
     text-align: right;
 }
 
+
+
 /*TODO: Ask with what browser the site will be visited + tell about weird FF behaviour*/
 /*TODO: Ask if media Queries are allowd*/
 /*TODO: Ask what tool to use to validate */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .content {
         max-width: 80%;
     }
