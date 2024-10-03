@@ -99,8 +99,7 @@ footer:before {
     background-color: rgb(133, 133, 133); 
     margin-top: 20px;
 }
-h2::before,
-.horizontal-line {
+h2::before {
     content: "";
     display: block;
     width: 100%;
