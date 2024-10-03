@@ -52,7 +52,8 @@ img {
 }
 
 #video-showcase-vertical {
-    max-width: 100%;
+    max-height: 80vh;
+    max-width: 50vw;
     display: block;
     margin: 0 auto;
 }
@@ -104,4 +105,11 @@ footer:before {
     height: 1px;
     background-color: rgb(133, 133, 133); 
     margin-top: 20px;
+}
+
+/*TODO: Ask if media Queries are allowd*/
+@media screen and (max-width: 600px) {
+    .content {
+        max-width: 80%;
+    }    
 }
