@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>html template</title>
+  <!--
+		This html template uses an internal style sheet because it works as an academic example.
+		Usually, it is recommended the use of EXTERNAL CSS files.
+		* An internal style sheet may be used if one single page has a unique style.
+		* Internal styles are defined within the <style> element, inside the <head> section of an HTML page
+	-->
+  <style type="text/css">
+    @font-face {
+      font-family: roboto;
+      src: url(assets/Roboto/Roboto-Regular.ttf);
+    }
+
+    @font-face {
+      font-family: 'Aqua Grotesque';
+      src: url(assets/aqua/aqua.ttf);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fefefe;
+      margin: 0;
+      font-size: 1rem;
+      font-family: roboto, Arial, Arial, Helvetica, sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: bold;
+      font-family: 'Aqua Grotesque';
+    }
+
+    h1 {
+      font-size: 3.6rem;
+      line-height: 2;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      line-height: 1.7rem;
+    }
+
+    .plant-box p {
+      color: #414141;
+      line-height: 1.6rem;
+    }
+
+    .plant-box {
+      max-width: 70ch;
+      margin: 1rem auto;
+      align-self: center;
+      padding: 0 2rem;
+    }
+
+    .plant-box img {
+      width: min(40rem, 100%);
+      display: block;
+      filter: saturate(0.3);
+    }
+
+    .plant-box p>span {
+      text-transform: uppercase;
+    }
+
+    .plant-box p::first-line {
+      font-weight: bold;
+    }
+
+    .plant-box p::first-letter {
+      font-size: 4rem;
+      float: left;
+      margin-right: 0.5rem;
+      line-height: 1.1;
+    }
+
+
+    @media (min-width: 40rem) {
+
+      html,
+      body {
+        font-size: 32px;
+      }
+
+      .plant-box img {
+        width: clamp(1px, 100%, 25rem);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Planting Guide</h1>
+
+  <div class="plant-box" id="box1">
+    <h2>Magnolia</h2>
+    <img src="assets/magnolia.jpg" alt="magnolia">
+    <p><span>Magnolia grandiflora</span>, commonly known as the Southern magnolia or bull bay, is a tree of the
+      family Magnoliaceae native to the southeastern United States, from coastal Virginia south to central Florida, and
+      west
+      to eastern Texas and Oklahoma. Reaching 27.5 m (90 ft) in height, it is a large striking evergreen tree with large
+      dark
+      green leaves and large white fragrant flowers. Widely cultivated around the world, over a hundred cultivars have
+      been
+      bred and marketed commercially. The timber is hard and heavy, and has been used commercially to make furniture,
+      pallets,
+      and veneer.
+    </p>
+  </div>
+
+  <div class="plant-box" id="box2">
+    <h2>Ranunculus</h2>
+    <img src="assets/ranunculus.jpg" alt="ranunculus">
+    <p><span>Ranunculus asiaticus (Persian Buttercup)</span> is a species of buttercup (Ranunculus) native to the
+      eastern Mediterranean
+      region in southwestern Asia, southeastern Europe (Crete, Karpathos and Rhodes), and northeastern Africa. It is a
+      herbaceous
+      perennial plant growing to 45 cm tall, with simple or branched stems. The basal leaves are three-lobed, with
+      leaves higher
+      on the stems more deeply divided; like the stems, they are downy or hairy. The flowers are 3-5 cm diameter,
+      variably red
+      to pink, yellow, or white, with one to several flowers on each stem.
+    </p>
+  </div>
+
+  <div class="plant-box" id="box3">
+    <h2>Tulip</h2>
+    <img src="assets/tulip.jpg" alt="tulip">
+    <p><span>Tulipa gesneriana L. or "Didier's tulip"</span> is a plant belonging to the family of Liliaceae. This
+      species has
+      uncertain origins, possibly from Asia, and has become naturalised in south-west Europe. Most of the cultivated
+      species,
+      subspecies and cultivars of tulip are derived from Tulipa gesneriana. The flower and bulb can cause dermatitis
+      through
+      the allergen, tuliposide A, even though the bulbs may be consumed with little ill-effect. The sweet-scented
+      bisexual flowers
+      appear during April and May. Bulbs are extremely resistant to frost, and can tolerate temperatures well below
+      freezing
+      - a period of low temperature is necessary to induce proper growth and flowering, triggered by an increase in
+      sensitivity
+      to the phytohormone auxin. The bulbs may be dried and pulverised and added to cereals or flour.
+    </p>
+  </div>
+
+</body>
+
+</html>
