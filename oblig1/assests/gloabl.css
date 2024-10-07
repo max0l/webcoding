@@ -164,15 +164,8 @@ h2::before {
 /*https://www.w3schools.com/cssref/pr_tab_table-layout.php*/
 /*https://www.w3schools.com/css/css_grid.asp*/
 /*https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout*/
-.cv-table {
-    display: grid;
-    grid-template-columns: 1.5fr 0.5fr;
-}
 
-.cv-table p {
-    margin-bottom: 10px;
-    margin-top: 0;
-}
+
 
 .cv-table ul {
     margin-top: 3px;
@@ -180,18 +173,27 @@ h2::before {
 }
 
 .cv-table {
-    margin-bottom: 10px;
-    margin-top: 0;
+    margin-bottom: 30px;
 }
+
 
 .cv-title {
     font-weight: 800;
     font-size: 1.2em;
 }
 
+.cv-title,
+.cv-what,
+.cv-descr {
+    text-align: left;
+    max-width: 70%;
+}
+
 .cv-time,
 .cv-location {
     text-align: right;
+    max-width: 30%;
+    margin-left: auto;
 }
 
 
