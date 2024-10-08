@@ -1,6 +1,6 @@
 /*https://www.w3schools.com/csS/css_font_google.asp*/
-/* https://www.w3schools.com/csS/css_text.asp */
-/*https://www.geeksforgeeks.org/how-to-include-a-font-ttf-using-css/ */
+/*https://www.w3schools.com/csS/css_text.asp*/
+/*https://www.geeksforgeeks.org/how-to-include-a-font-ttf-using-css/*/
 @font-face {
     font-family: SourceCodePro;
     /*This is a subset version of Source Code Pro to reduce the carbon footprint*/
@@ -164,12 +164,6 @@ h2::before {
 }
 
 /*Resume*/
-/*https://www.w3schools.com/cssref/pr_tab_table-layout.php*/
-/*https://www.w3schools.com/css/css_grid.asp*/
-/*https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout*/
-
-
-
 .cv-table ul {
     margin-top: 3px;
     padding-left: 20px;
