@@ -48,9 +48,7 @@ h2 {
 
 .content {
     color: #ffffff;
-    /*this will ensure a minimun width of 220 px which is important for smaller screens*/
-    /*box-sizing: border_box;*/
-    max-width: 60%;
+    max-width: 65%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -104,6 +102,11 @@ header nav ul li,
 footer nav ul li {
     display: inline-block;
     margin: 5px 15px;
+}
+
+header nav ul,
+footer nav ul {
+    padding-left: 0;
 }
 
 dl dt {
@@ -195,6 +198,3 @@ h2::before {
     max-width: 30%;
     margin-left: auto;
 }
-
-
-/*TODO: Ask if media Queries are allowd -> no grid if possible no media querry*/
