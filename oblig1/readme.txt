@@ -28,5 +28,6 @@ Chanelog (oldest to newest):
 - adjusted comments in global.css
 - Added CSS for the blockquote, made it more mobile friendlier by adjusting the CSS to a width: 800px and max-width: 90%, adjusted image css to not overflow anymore, removed left list padding changed gloabl.css to global.css
 - added a changelog
+- removed table explaination from about.html
 
 Github: https://github.com/max0l/webcoding
