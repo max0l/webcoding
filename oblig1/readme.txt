@@ -1,4 +1,4 @@
-https://maxfl.folk.ntnu.no/land-root/oblig1.1/index.html
+https://maxfl.folk.ntnu.no/land-root/oblig1-attempt2/index.html
 VHS Source: https://www.youtube.com/watch?v=tf8BfnMoafk9
 funny video Source: https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
@@ -29,5 +29,6 @@ Chanelog (oldest to newest):
 - Added CSS for the blockquote, made it more mobile friendlier by adjusting the CSS to a width: 800px and max-width: 90%, adjusted image css to not overflow anymore, removed left list padding changed gloabl.css to global.css
 - added a changelog
 - removed table explaination from about.html
+- small reformatting changes
 
 Github: https://github.com/max0l/webcoding
