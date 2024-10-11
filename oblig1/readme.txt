@@ -30,5 +30,12 @@ Chanelog (oldest to newest):
 - added a changelog
 - removed table explaination from about.html
 - small reformatting changes
+- Made the max-width content from 90% to 95% to get a little more space in mobile view
+- Discoverd a weird bug regarding the "go back to top" element (see side node)
 
 Github: https://github.com/max0l/webcoding
+
+Old version: https://maxfl.folk.ntnu.no/land-root/oblig1/index.html
+
+Side Note:
+If you are using an Adblocker (like uBlockOrigin) it could happen, taht the "go back to top" element on the Portfolio gets hidden.
