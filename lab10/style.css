@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 300px;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+body>p {
+    font-style: italic;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row .box {
+    margin: 20px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    font-size: 2em;
+    color: blue;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
