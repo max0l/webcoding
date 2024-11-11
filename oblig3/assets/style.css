@@ -1,6 +1,7 @@
 html {
     scroll-snap-type: block proximity;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -19,6 +20,7 @@ body {
     list-style-type: none;
 }
 
+
 .page,
 #headline-page {
     display: flex;
@@ -33,11 +35,66 @@ body {
 #headline-page {
     width: 100vw;
     height: 100vh;
+    flex-direction: column;
 }
+
+#headline-page h1 {
+    font-size: 6em;
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+
+#headline-page nav {
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#headline-page nav ul {
+    box-sizing: border-box;
+    overflow: scroll;
+    max-width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+
+#headline-page nav ul li {
+    padding: 10px 20px 20px 20px;
+    white-space: nowrap;
+}
+
+#arrow-down {
+    position: absolute;
+    animation: moveArrow 1s infinite alternate;
+}
+
+#arrow-down path {
+    stroke: black;
+}
+
+
+@keyframes moveArrow {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: 20px;
+    }
+}
+
 
 .page {
     margin: 10% 5% 5% 5%;
-    box-shadow: 10px 10px 30px -6px rgba(0,0,0,0.7); /* https://www.cssmatic.com/box-shadow */
+    box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.7);
+    /* https://www.cssmatic.com/box-shadow */
+    border-radius: 10px;
+
 }
 
 img {
@@ -48,4 +105,16 @@ img {
     flex: 1;
     justify-content: center;
     align-items: center;
+}
+
+.page div p {
+    padding-right: 15px;
+}
+
+.page blockquote {
+    margin: 0;
+}
+
+#targets img {
+    padding: 20px;
 }
