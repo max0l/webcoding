@@ -1,3 +1,10 @@
+/*
+TODO:
+- font size vereinheitlichen e.g nav
+
+*/
+
+
 html {
     scroll-snap-type: block proximity;
 }
@@ -5,6 +12,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    background-color: rgb(245, 244, 243);
 }
 
 #nav-bar {
@@ -29,6 +37,7 @@ body {
     max-height: 100vh;
     box-sizing: border-box;
     scroll-snap-align: center;
+    background-color: white;
 }
 
 #headline-page {
@@ -56,11 +65,13 @@ body {
     font-size: 10vw;
     max-width: 100%;
     text-align: left;
-    color: black;
     margin: 0;
     grid-area: headline;
     align-self: center;
     padding-left: 50px;
+    background-image: linear-gradient(-90deg, rgb(239, 188, 115), rgb(216, 115, 85));
+    background-clip: text;
+    color: transparent;
 }
 
 #headline-page nav {
@@ -145,4 +156,9 @@ body {
 
 #targets img {
     padding: 20px;
+}
+
+.picture-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
