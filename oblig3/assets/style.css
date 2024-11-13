@@ -3,7 +3,41 @@ TODO:
 - font size vereinheitlichen e.g nav
 
 */
+@font-face {
+    font-family: 'work_sansregular';
+    src: url('fonts/webfontkit/worksans-variablefont_wght-webfont.woff2') format('woff2'),
+         url('fonts/webfontkit/worksans-variablefont_wght-webfont.woff') format('woff'),
+         url('fonts/webfontkit/worksans-variablefont_wght-webfont.ttf') format('truetype'),
+         url('fonts/webfontkit/worksans-variablefont_wght-webfont.svg#work_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
+
+
+
+
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('fonts/webfontkit/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('fonts/webfontkit/sourcesanspro-regular-webfont.woff') format('woff'),
+         url('fonts/webfontkit/sourcesanspro-regular-webfont.ttf') format('truetype'),
+         url('fonts/webfontkit/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    font-family: 'source_sans_proregular', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: sans-serif;
+}
 
 html {
     scroll-snap-type: block proximity;
@@ -12,7 +46,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(245, 244, 243);
+    background-color: #23533F;
 }
 
 #nav-bar {
@@ -20,12 +54,23 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
+    background-color: rgba(35, 83, 63, 0.8);
+    border-bottom: rgb(28, 58, 39) 1px solid;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: rgb(244, 202, 101);
+    font-size: 1.2em;
+
 }
 
 #nav-bar ul {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
+    padding: 0;
+    margin: 1vh;
 }
 
 
@@ -37,7 +82,7 @@ body {
     max-height: 100vh;
     box-sizing: border-box;
     scroll-snap-align: center;
-    background-color: white;
+    background-color: #F4CA65;
 }
 
 #headline-page {
@@ -72,9 +117,10 @@ body {
     background-image: linear-gradient(-90deg, rgb(239, 188, 115), rgb(216, 115, 85));
     background-clip: text;
     color: transparent;
+    font-weight: bold;
 }
 
-#headline-page nav {
+#content-nav-bar {
     max-width: 100%;
     background-color: rgb(247, 247, 247);
     box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.7);
@@ -82,9 +128,10 @@ body {
     display: flex;
     justify-content: center;
     grid-area: nav-bar;
+    background-color: rgb(244, 202, 101);
 }
 
-#headline-page nav ul {
+#content-nav-bar ul {
     box-sizing: border-box;
     overflow-x: scroll;
     max-width: 100%;
@@ -94,10 +141,21 @@ body {
     list-style-type: none;
 }
 
-#headline-page nav ul li {
+#content-nav-bar ul li {
     padding: 10px 20px 20px 20px;
     white-space: nowrap;
+    font-size: 1.2em;
 }
+
+#content-nav-bar a {
+    text-decoration: none;
+    color: rgb(35, 83, 63);
+}
+
+#content-nav-bar a:visited {
+    color: black;
+}
+
 
 #arrow-down {
     position: absolute;
@@ -107,7 +165,7 @@ body {
 }
 
 #arrow-down path {
-    stroke: black;
+    stroke: rgb(244, 202, 101);
 }
 
 
