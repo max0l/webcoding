@@ -244,15 +244,17 @@ footer.page nav ul li {
 }
 
 .address-footer a img {
-    max-width: 200px;
+    width: 200px;
+    max-width: 100%;
     padding: 0;
+    border: black 1px solid;
 }
 
 .address-footer {
     max-width: 30%;
     display: flex;
     flex-wrap: wrap;
-
+    box-sizing: border-box;
 }
 
 .address-footer address {
@@ -261,6 +263,7 @@ footer.page nav ul li {
 
 .address-footer a {
     padding: 10px;
+    box-sizing: border-box;
 }
 
 .address-footer p {
@@ -293,7 +296,7 @@ footer.page>p {
             "image"
             "nav-bar"
             "arrow-down";
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         scroll-snap-align: none;
     }
@@ -310,8 +313,9 @@ footer.page>p {
     }
 
     #content-nav-bar {
-        width: 100vw;
+        width: 100%;
         height: 10vh;
+        box-sizing: border-box;
     }
 
     .page {
@@ -337,7 +341,8 @@ footer.page>p {
     }
 
     .ntnu-logo {
-        max-height: 200px;
+        width: 200px;
+        height: 200px;
     }
 
     .address-footer {
