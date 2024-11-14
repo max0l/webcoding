@@ -173,7 +173,7 @@ body {
     box-sizing: border-box;
     scroll-snap-align: center;
     background-color: #F4CA65;
-    margin: 10% 5% 5% 5%;
+    margin: 10% 3% 5% 3%;
     box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.7);
     /* https://www.cssmatic.com/box-shadow */
     border-radius: 10px;
@@ -192,12 +192,9 @@ body {
 }
 
 .page .text-col {
-    max-width: 90vw;
-    max-height: 90vh;
-}
-
-.page div p {
-    padding-right: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
 }
 
 .page blockquote {
@@ -214,6 +211,9 @@ body {
     padding-right: 10px;
 }
 
+.page:nth-child(odd) {
+    flex-direction: row-reverse;
+}
 
 footer.page {
     margin: 30px 0 0 0;
@@ -222,6 +222,7 @@ footer.page {
     display: flex;
     justify-content: space-evenly;
     align-items: start;
+    
 }
 
 footer.page nav ul {
@@ -248,17 +249,28 @@ footer.page a img {
     padding: 0;
 }
 
-footer.page>img {
-    width: 100px;
-}
-
-footer.page p {
-    max-width: 10%;
-    padding-right: 10px;
-}
-
 .address-footer {
     max-width: 30%;
     display: flex;
     flex-wrap: wrap;
+    
+}
+.address-footer address {
+    align-self: flex-start;
+}
+
+.address-footer a {
+    padding: 10px;
+}
+
+.address-footer p {
+    margin: 0;
+    padding: 10px;
+}
+
+footer.page>p {
+    max-width: 15%;
+    padding: 10px;
+    text-align: right;
+    margin: 0;
 }
