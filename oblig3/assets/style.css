@@ -3,14 +3,16 @@ TODO:
 - font size vereinheitlichen e.g nav
 - ask what link to IDG1292
 - ask for google maps
+- switch header font
+- extra source mention for the texts
 
 */
 @font-face {
     font-family: 'work_sansregular';
     src: url('fonts/webfontkit/worksans-variablefont_wght-webfont.woff2') format('woff2'),
-         url('fonts/webfontkit/worksans-variablefont_wght-webfont.woff') format('woff'),
-         url('fonts/webfontkit/worksans-variablefont_wght-webfont.ttf') format('truetype'),
-         url('fonts/webfontkit/worksans-variablefont_wght-webfont.svg#work_sansregular') format('svg');
+        url('fonts/webfontkit/worksans-variablefont_wght-webfont.woff') format('woff'),
+        url('fonts/webfontkit/worksans-variablefont_wght-webfont.ttf') format('truetype'),
+        url('fonts/webfontkit/worksans-variablefont_wght-webfont.svg#work_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -22,9 +24,9 @@ TODO:
 @font-face {
     font-family: 'source_sans_proregular';
     src: url('fonts/webfontkit/sourcesanspro-regular-webfont.woff2') format('woff2'),
-         url('fonts/webfontkit/sourcesanspro-regular-webfont.woff') format('woff'),
-         url('fonts/webfontkit/sourcesanspro-regular-webfont.ttf') format('truetype'),
-         url('fonts/webfontkit/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+        url('fonts/webfontkit/sourcesanspro-regular-webfont.woff') format('woff'),
+        url('fonts/webfontkit/sourcesanspro-regular-webfont.ttf') format('truetype'),
+        url('fonts/webfontkit/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -81,10 +83,10 @@ body {
     box-sizing: border-box;
     scroll-snap-align: center;
     display: grid;
-    grid-template-areas: 
-    "headline image"
-    "nav-bar nav-bar"
-    "arrow-down arrow-down";
+    grid-template-areas:
+        "headline image"
+        "nav-bar nav-bar"
+        "arrow-down arrow-down";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 8fr 1fr 1fr;
 }
@@ -159,6 +161,7 @@ body {
     0% {
         bottom: 0;
     }
+
     100% {
         bottom: 20px;
     }
@@ -211,18 +214,14 @@ body {
     padding-right: 10px;
 }
 
-.page:nth-child(odd) {
-    flex-direction: row-reverse;
-}
 
 footer.page {
     margin: 30px 0 0 0;
     border-radius: 0;
-    box-shadow: 0;
+    box-shadow: none;
     display: flex;
     justify-content: space-evenly;
     align-items: start;
-    
 }
 
 footer.page nav ul {
@@ -240,11 +239,11 @@ footer.page nav ul li {
     padding: 10px;
 }
 
-footer.page nav ul li{
+footer.page nav ul li {
     padding-top: 0;
 }
 
-footer.page a img {
+.address-footer a img {
     max-width: 200px;
     padding: 0;
 }
@@ -253,8 +252,9 @@ footer.page a img {
     max-width: 30%;
     display: flex;
     flex-wrap: wrap;
-    
+
 }
+
 .address-footer address {
     align-self: flex-start;
 }
@@ -273,4 +273,97 @@ footer.page>p {
     padding: 10px;
     text-align: right;
     margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+    .page:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .page:last-child {
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #headline-page {
+        grid-template-areas:
+            "headline"
+            "image"
+            "nav-bar"
+            "arrow-down";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        scroll-snap-align: none;
+    }
+
+    #headline-page h1 {
+        font-size: 7vh;
+        margin-top: 40px;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #headline-page img {
+        max-width: 500px;
+    }
+
+    #content-nav-bar {
+        width: 100vw;
+        height: 10vh;
+    }
+
+    .page {
+        flex-direction: column-reverse;
+        margin: 10% 2% 2% 2%;
+        scroll-snap-align: none;
+        max-height: none;
+    }
+
+    .page img {
+        width: 500px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .page:last-child {
+        flex-direction: column;
+    }
+
+    footer.page {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ntnu-logo {
+        max-height: 200px;
+    }
+
+    .address-footer {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .address-footer address {
+        align-self: center;
+    }
+
+
+    .address-footer a img {
+        max-width: 70vw;
+        max-height: 70vw;
+        padding: 0;
+    }
+
+    footer.page p {
+        max-width: 100%;
+        text-align: center;
+    }
+    footer.page li {
+        text-align: center;
+    }
 }
