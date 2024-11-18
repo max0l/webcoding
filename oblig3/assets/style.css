@@ -4,6 +4,11 @@ TODO:
 - switch header font
 - ask sans-serif what actual font it is -> google
 - ask if <label><input></label> is ok
+- Ask if layouts (mobile and desktop) are ok
+- Needs the game to be printed?
+- is the game ok?
+- is the structure of the html ok? (section div (class="text-col")...
+- Hashtags okay?
 
 */
 @font-face {
@@ -275,6 +280,36 @@ footer.page iframe {
     max-width: 100%;
 }
 
+#contact-page,
+#game-page {
+    flex-direction: column;
+}
+
+#game-page {
+    max-height: none;
+}
+
+#game-page table {
+    border-collapse: collapse; /*https://dev.to/dcodeyt/creating-beautiful-html-tables-with-css-428l*/
+    margin: 25px 0;
+    width: 100%;
+}
+
+#game-page table,
+#game-page table th,
+#game-page table td {
+    border: 1px solid black;
+}
+
+#game-page table td {
+    padding: 7px;
+}
+
+#game-page table tbody tr:nth-of-type(even) {
+    background-color: #ffdd69;
+}
+
+
 .info h1 {
     font-size: 2.2em;
 }
@@ -291,11 +326,6 @@ footer.page iframe {
 .info section {
     width: 100%;
     display: flex;
-}
-
-
-#contact-page {
-    flex-direction: column;
 }
 
 #contact-page iframe {
@@ -315,6 +345,11 @@ footer.page iframe {
 
 .contact-form h2 {
     text-align: center;
+}
+
+.contact-form input:user-invalid,
+.contact-form textarea:user-invalid {
+    border: 1px solid red; /*https://youtu.be/A89FMtIkWKc?t=183*/
 }
 
 #confirmation-input-label {
@@ -415,11 +450,12 @@ footer.page iframe {
     footer.page li {
         text-align: center;
     }
+
     .info h1 {
-        font-size: .8em;
+        font-size: 1.8em;
     }
 
-    #contact-page section {
+    .info section {
         flex-direction: column;
         align-items: center;
         text-align: center;
