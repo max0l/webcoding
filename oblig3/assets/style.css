@@ -3,12 +3,8 @@ TODO:
 - font size vereinheitlichen e.g nav
 - switch header font
 - sans-serif what actual font it is -> arial --> switch
-- ask if <label><input></label> is ok
-- Ask if layouts (mobile and desktop) are ok
 - Needs the game to be printed?
-- is the game ok?
-- is the structure of the html ok? (section div (class="text-col")...
-- Hashtags okay?
+- focus more on the goal itself (include heading/logo)
 
 */
 @font-face {
@@ -171,7 +167,7 @@ body {
     justify-content: center;
     align-items: center;
     max-width: 100vw;
-    max-height: 100vh;
+    min-height: fit-content;
     box-sizing: border-box;
     background-color: #F4CA65;
     margin: 50px 3% 5% 3%;
@@ -211,6 +207,16 @@ body {
 .page ol {
     padding-left: 20px;
     padding-right: 10px;
+}
+
+.source {
+    font-size: 0.8em;
+    padding-right: 10px;
+    color: gray;
+}
+
+.source a {
+    color: gray;
 }
 
 
