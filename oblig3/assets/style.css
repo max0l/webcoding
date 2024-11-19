@@ -2,7 +2,7 @@
 TODO:
 - font size vereinheitlichen e.g nav
 - switch header font
-- ask sans-serif what actual font it is -> google
+- sans-serif what actual font it is -> arial --> switch
 - ask if <label><input></label> is ok
 - Ask if layouts (mobile and desktop) are ok
 - Needs the game to be printed?
@@ -174,7 +174,7 @@ body {
     max-height: 100vh;
     box-sizing: border-box;
     background-color: #F4CA65;
-    margin: 10% 3% 5% 3%;
+    margin: 50px 3% 5% 3%;
     box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.7);
     /* https://www.cssmatic.com/box-shadow */
     border-radius: 10px;
@@ -360,17 +360,28 @@ footer.page iframe {
     max-width: 20px;
 }
 
-@media screen and (min-width: 600px) {
-    .page:nth-child(even) {
-        flex-direction: row-reverse;
-    }
+.page:nth-child(even) {
+    flex-direction: row-reverse;
+}
 
-    .page:last-child {
-        flex-direction: row;
-    }
+.page:last-child {
+    flex-direction: row;
 }
 
 @media screen and (max-width: 600px) {
+
+    .page:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .page:nth-child(odd) {
+        flex-direction: column;
+    }
+    
+    .page:last-child {
+        flex-direction: column;
+    }
+
     #headline-page {
         grid-template-areas:
             "headline"
@@ -400,9 +411,15 @@ footer.page iframe {
 
     .page {
         flex-direction: column-reverse;
-        margin: 10% 2% 2% 2%;
+        margin: 50px 2% 2% 2%;
         scroll-snap-align: none;
         max-height: none;
+    }
+
+    .page .text-col {
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 5px;
     }
 
     .page img {
@@ -421,7 +438,9 @@ footer.page iframe {
     }
 
     footer.page img {
-        width: 20%;
+        max-width: 20%;
+        min-width: 100px;
+
     }
 
     .address-footer {
@@ -453,12 +472,17 @@ footer.page iframe {
 
     .info h1 {
         font-size: 1.8em;
+        text-align: center;
     }
 
     .info section {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    .info li {
+        text-align: left;
     }
 
     #contact-page iframe {
