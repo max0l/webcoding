@@ -376,6 +376,10 @@ footer.page iframe {
     align-items: center;
 }
 
+.about-img img {
+    max-width: 80%;
+}
+
 @media screen and (max-width: 600px) {
 
     .page:nth-child(even) {
@@ -402,7 +406,7 @@ footer.page iframe {
 
     #headline-page h1 {
         font-size: clamp(3.5em, 14vw, 16vw);
-        margin-top: 40px;
+        margin-top: 50px;
         text-align: center;
         padding-left: 10px;
         padding-right: 10px;
