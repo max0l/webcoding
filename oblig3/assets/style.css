@@ -1,8 +1,5 @@
 /*
 TODO:
-- font size vereinheitlichen e.g nav
-- switch header font
-- sans-serif what actual font it is -> arial --> switch
 - Needs the game to be printed?
 
 */
@@ -93,7 +90,7 @@ body {
 }
 
 #headline-page h1 {
-    font-size: 8vw;
+    font-size: clamp(3em, 8vw, 18vw);
     max-width: 100%;
     text-align: left;
     margin: 0;
