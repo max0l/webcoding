@@ -97,7 +97,7 @@ body {
     grid-area: headline;
     align-self: center;
     padding-left: 50px;
-    background-image: linear-gradient(-90deg, rgb(239, 188, 115), rgb(216, 115, 85));
+    background-image: linear-gradient(-90deg, rgb(239, 188, 115), rgb(216, 115, 85)); /* https://www.youtube.com/watch?v=PL3Odw-k8W4 */
     background-clip: text;
     color: transparent;
     font-weight: bold;
@@ -374,6 +374,17 @@ footer.page iframe {
     flex-direction: row;
 }
 
+.about-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-img img {
+    max-width: 80%;
+    padding: 0;
+}
+
 @media screen and (max-width: 600px) {
 
     .page:nth-child(even) {
@@ -494,5 +505,18 @@ footer.page iframe {
         max-width: 100%;
         max-height: 100%;
     }
+
+    .about-img {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .about-img img {
+        max-width: 90%;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
 
 }
