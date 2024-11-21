@@ -185,10 +185,6 @@ a:visited {
     padding-bottom: 5px;
 }
 
-.page blockquote {
-    margin: 0;
-}
-
 .picture-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -316,7 +312,7 @@ footer.page iframe {
 }
 
 .info {
-    margin-top: 4%;
+    margin-top: 50px;
     max-width: 95%;
     width: 800px;
     margin-left: auto;
@@ -426,7 +422,6 @@ footer.page iframe {
     .page {
         flex-direction: column-reverse;
         margin: 50px 2% 2% 2%;
-        scroll-snap-align: none;
         max-height: none;
     }
 
