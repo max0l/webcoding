@@ -130,13 +130,12 @@ body {
     font-size: 1.2em;
 }
 
-#content-nav-bar a {
-    text-decoration: none;
+a {
     color: rgb(35, 83, 63);
 }
 
-#content-nav-bar a:visited {
-    color: black;
+a:visited {
+    color: rgb(35, 83, 63);
 }
 
 
@@ -208,11 +207,11 @@ body {
 .source {
     font-size: 0.8em;
     padding-right: 10px;
-    color: gray;
+    color: rgb(0, 0, 0);
 }
 
 .source a {
-    color: gray;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -259,6 +258,7 @@ footer.page nav ul li {
 
 .address-footer address {
     align-self: flex-start;
+    font-style: normal;
 }
 
 .address-footer a {
@@ -328,6 +328,10 @@ footer.page iframe {
 .info section {
     width: 100%;
     display: flex;
+}
+
+#contact-page address {
+    font-style: normal;
 }
 
 #contact-page iframe {
